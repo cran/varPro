@@ -1,0 +1,84 @@
+## Dynamic C-code Libraries.
+useDynLib(varPro, .registration = TRUE)
+
+importFrom("gbm", "gbm", "predict.gbm", "gbm.perf")
+
+importFrom("BART", "wbart")
+
+importFrom("glmnet", "glmnet", "cv.glmnet")
+
+importFrom("graphics", "barplot", "boxplot", "bxp", "lines",
+           "rug", "axis", "legend", "arrows", "mtext",
+           "abline", "par", "points", "rect", "text")
+
+importFrom("grDevices", "hcl.colors")
+
+importFrom("parallel", "mclapply", "detectCores")
+
+importFrom("randomForestSRC", "rfsrc", "predict.rfsrc",
+           "get.mv.formula", "get.mv.predicted", "get.auc", "get.pr.auc")
+
+importFrom("stats", "as.formula", "coef", "median", "qnorm",
+           "pnorm", "quantile", "runif", "var", "setNames",
+           "na.omit", "sd", "model.matrix", "prcomp",
+           "loess", "loess.control", "lowess",
+           "lm", "supsmu", "predict.lm",
+           "rnorm", "ecdf", "qt", "glm",
+           "t.test", "chisq.test", "prop.test",
+           "binomial", "logLik", "pchisq", "cov",
+           "hatvalues", "resid")
+
+importFrom("survival", "survdiff", "Surv")
+
+importFrom("utils", "combn", "capture.output")
+
+importFrom("umap", "umap")
+
+
+
+export(
+  bart.learner,
+  beta.varpro,
+  clusterpro,
+  cv.varpro,
+  get.beta.entropy,
+  get.iso.performance,
+  get.mc.cores,
+  get.orgvimp,
+  get.splitweight.custom,
+  get.topvars,
+  get.vimp,
+  gbm.learner,
+  importance,
+  importance.varpro,
+  ivarpro,
+  ivarpro.shap,
+  isopro,
+  outpro,
+  outpro.null,
+  predict.isopro,
+  predict.uvarpro,
+  predict.varpro,
+  partialpro,
+  plot.clusterpro,
+  plot.partialpro,
+  rf.learner,
+  roughfix,
+  sdependent,
+  uvarpro,
+  varpro,
+  varpro.news,
+  varpro.strength)
+
+S3method(plot, clusterpro)
+
+S3method(plot, partialpro)
+
+
+S3method(predict, isopro)
+S3method(predict, uvarpro)
+S3method(predict, varpro)
+
+S3method(print, cv.varpro)
+
+
