@@ -1,6 +1,6 @@
 Package: varPro
-Version: 3.1.0
-Date: 2026-04-18
+Version: 3.2.0
+Date: 2026-08-22
 Title: Model-Independent Variable Selection via the Rule-Based Variable
         Priority
 Authors@R: c(person("Min", "Lu", email = "luminwin@gmail.com", role = "aut"),
@@ -23,6 +23,6 @@ License: GPL (>= 3)
 URL: https://www.varprotools.org/ https://www.luminwin.net/
         https://ishwaran.org/
 NeedsCompilation: yes
-Packaged: 2026-04-18 18:40:05 UTC; kogalur
+Packaged: 2026-08-22 17:02:13 UTC; kogalur
 Repository: CRAN
-Date/Publication: 2026-04-19 14:10:02 UTC
+Date/Publication: 2026-08-22 23:20:08 UTC
